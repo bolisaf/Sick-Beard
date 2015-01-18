@@ -103,7 +103,7 @@ class OmgwtfnzbsProvider(generic.NZBProvider):
                   'api': sickbeard.OMGWTFNZBS_APIKEY,
                   'eng': 1,
                   'nukes': 1,  # show nuke info
-                  'catid': '19,20',  # SD,HD
+                  'catid': 'tv',  # includes others
                   'retention': sickbeard.USENET_RETENTION,
                   'search': search}
 
@@ -171,7 +171,7 @@ class OmgwtfnzbsCache(tvcache.TVCache):
                   'api': sickbeard.OMGWTFNZBS_APIKEY,
                   'eng': 1,
                   'delay': 30,
-                  'catid': '19,20'}  # SD,HD
+                  'catid': 'tv'}  # include others
 
         rss_url = 'https://rss.omgwtfnzbs.org/rss-download.php?' + urllib.urlencode(params)
 
