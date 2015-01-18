@@ -44,7 +44,7 @@ from sickbeard.name_parser.parser import NameParser, InvalidNameException
 
 class NewznabProvider(generic.NZBProvider):
 
-    def __init__(self, name, url, key='', catIDs='5030,5040'):
+    def __init__(self, name, url, key='', catIDs='5030,5040,5020,5050'):
 
         generic.NZBProvider.__init__(self, name)
 
@@ -63,7 +63,7 @@ class NewznabProvider(generic.NZBProvider):
         if catIDs:
             self.catIDs = catIDs
         else:
-            self.catIDs = '5030,5040'
+            self.catIDs = '5030,5040,5020,5050'
 
         self.enabled = True
         self.supportsBacklog = True
